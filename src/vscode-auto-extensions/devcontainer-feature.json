@@ -1,14 +1,7 @@
 {
+  "name": "VSCode Auto Extension Installer",
   "id": "vscode-auto-extensions",
   "version": "1.0.0",
-  "name": "VSCode Auto Extension Installer",
   "description": "Installs VSCode extensions from devcontainer.json when VSCODE_REMOTE_CONTAINERS=1 is set (e.g. for remote environments / envbuilder / coder.com)",
-  "documentationURL": "https://github.com/charemma/devcontainer-features/tree/main/src/vscode-auto-extensions",
-  "install": {
-    "shell": "bash",
-    "script": "./install.sh"
-  },
-  "entrypoint": "/usr/local/bin/vscode-auto-extensions-entrypoint.sh",
-  "supported": true,
   "options": {}
 }
