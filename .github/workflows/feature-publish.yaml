@@ -1,0 +1,23 @@
+name: "Publish DevContainer Features"
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/**"
+      - ".github/workflows/**"
+      - "metadata.json"
+
+jobs:
+  publish-features:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publish Dev Container Features
+        uses: devcontainers/action@v1
+        with:
+          publish-features: "true"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
