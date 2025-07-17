@@ -1,7 +1,7 @@
 {
   "name": "VSCode Auto Extension Installer",
   "id": "vscode-auto-extensions",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Installs VSCode extensions from devcontainer.json when VSCODE_REMOTE_CONTAINERS=1 is set (e.g. for remote environments / envbuilder / coder.com)",
   "options": {}
 }
