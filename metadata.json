@@ -4,7 +4,7 @@
       "description": "Install VSCode extensions from devcontainer.json during remote container attach",
       "versions": {
         "1.0.0": {
-          "path": "./src/vscode-auto-extensions"
+          "path": "src/vscode-auto-extensions"
         }
       }
     }
