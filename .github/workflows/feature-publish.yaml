@@ -15,10 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - run: ls -ahl && cat metadata.json
+
       - name: Publish Dev Container Features
         uses: devcontainers/action@v1
         with:
           publish-features: "true"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        working-directory: .
